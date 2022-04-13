@@ -298,6 +298,7 @@
 				DEVELOPMENT_TEAM = R86YR98C9Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = componenttests/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Component Tests";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -327,6 +328,7 @@
 				DEVELOPMENT_TEAM = R86YR98C9Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = componenttests/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Component Tests";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
