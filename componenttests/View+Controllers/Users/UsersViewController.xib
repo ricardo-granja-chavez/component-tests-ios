@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UsersViewController" customModule="componenttests" customModuleProvider="target">
             <connections>
+                <outlet property="usersTableView" destination="1hF-TU-e2l" id="CVd-KD-RZ1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,14 +18,29 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1hF-TU-e2l" customClass="UsersTableView" customModule="componenttests" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1hF-TU-e2l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="37l-F5-8pf"/>
+                <constraint firstAttribute="bottom" secondItem="1hF-TU-e2l" secondAttribute="bottom" id="Ugu-US-AQ0"/>
+                <constraint firstItem="1hF-TU-e2l" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gnw-J2-gyw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1hF-TU-e2l" secondAttribute="trailing" id="vnP-9q-1h8"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="100"/>
         </view>
     </objects>
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

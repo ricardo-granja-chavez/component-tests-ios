@@ -12,7 +12,7 @@ class APIManager {
     
     public static var shared = APIManager()
     
-    public var baseURL: String { "https://jsonplaceholder.typicode.com/" }
+    public var baseURL: String { "https://jsonplaceholder.typicode.com" }
     
     public var headers: [String : String] { ["Content-Type": "application/json", "Accept": "application/json"] }
     

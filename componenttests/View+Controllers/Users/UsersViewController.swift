@@ -9,8 +9,34 @@ import UIKit
 
 class UsersViewController: UIViewController {
 
+    @IBOutlet weak var usersTableView: UsersTableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.setupTableView()
+        self.getUsers()
     }
  
+    private func setupTableView() {
+        usersTableView.delegate = usersTableView
+        usersTableView.dataSource = usersTableView
+        usersTableView.onPress = { (user) in
+            debugPrint(user.name)
+        }
+    }
+    
+    private func getUsers() {
+        UserServices.shared.getUsers { (result) in
+            switch result {
+            case .success(let users):
+                DispatchQueue.main.async {
+                    self.usersTableView.collection = UserListViewModel(users: users)
+                    self.usersTableView.reloadData()
+                }
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+            }
+        }
+    }
 }
