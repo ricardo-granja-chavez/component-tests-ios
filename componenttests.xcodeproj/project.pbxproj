@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D17FE74280762C200A473EC /* UsersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE73280762C200A473EC /* UsersTableView.swift */; };
+		1D17FE772807645F00A473EC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE762807645F00A473EC /* APIManager.swift */; };
 		1D2C5E0C2806AA4E00EDD254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C5E0B2806AA4E00EDD254 /* AppDelegate.swift */; };
 		1D2C5E152806AA4F00EDD254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C5E142806AA4F00EDD254 /* Assets.xcassets */; };
 		1D2C5E182806AA4F00EDD254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C5E162806AA4F00EDD254 /* LaunchScreen.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D17FE73280762C200A473EC /* UsersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableView.swift; sourceTree = "<group>"; };
+		1D17FE762807645F00A473EC /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		1D2C5E082806AA4E00EDD254 /* componenttests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = componenttests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2C5E0B2806AA4E00EDD254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D2C5E142806AA4F00EDD254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D17FE722807629500A473EC /* CustomTableViews */ = {
+			isa = PBXGroup;
+			children = (
+				1D17FE73280762C200A473EC /* UsersTableView.swift */,
+			);
+			path = CustomTableViews;
+			sourceTree = "<group>";
+		};
+		1D17FE752807644C00A473EC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1D17FE762807645F00A473EC /* APIManager.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		1D2C5DFF2806AA4E00EDD254 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +76,7 @@
 		1D2C5E0A2806AA4E00EDD254 /* componenttests */ = {
 			isa = PBXGroup;
 			children = (
+				1D17FE752807644C00A473EC /* Domain */,
 				1D2C5E1F2806AB3D00EDD254 /* View+Controllers */,
 				1D2C5E0B2806AA4E00EDD254 /* AppDelegate.swift */,
 				1D2C5E142806AA4F00EDD254 /* Assets.xcassets */,
@@ -68,6 +89,7 @@
 		1D2C5E1F2806AB3D00EDD254 /* View+Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D17FE722807629500A473EC /* CustomTableViews */,
 				1D2C5E222806ACF000EDD254 /* Users */,
 				1D2C5E202806AB9300EDD254 /* MenuTabBarController.swift */,
 			);
@@ -154,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D17FE74280762C200A473EC /* UsersTableView.swift in Sources */,
 				1D2C5E212806AB9300EDD254 /* MenuTabBarController.swift in Sources */,
+				1D17FE772807645F00A473EC /* APIManager.swift in Sources */,
 				1D2C5E252806AD0800EDD254 /* UsersViewController.swift in Sources */,
 				1D2C5E0C2806AA4E00EDD254 /* AppDelegate.swift in Sources */,
 			);
