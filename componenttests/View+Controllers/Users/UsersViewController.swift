@@ -22,7 +22,8 @@ class UsersViewController: UIViewController {
         usersTableView.delegate = usersTableView
         usersTableView.dataSource = usersTableView
         usersTableView.onPress = { (user) in
-            debugPrint(user.name)
+            let vc = UserDetailsViewController(user: user)
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     

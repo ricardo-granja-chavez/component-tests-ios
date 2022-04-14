@@ -5,7 +5,18 @@
 //  Created by Ricardo Granja Chávez on 13/04/22.
 //
 
-import Foundation
+import UIKit
+
+enum UserContentType: Int, CaseIterable {
+    case id
+    case name
+    case username
+    case email
+    case address
+    case phone
+    case website
+    case company
+}
 
 // MARK: - User
 struct UserViewModel {
@@ -14,9 +25,39 @@ struct UserViewModel {
     var id: Int { self.user.id ?? 0 }
     var name: String { self.user.name ?? "" }
     var username: String { self.user.username ?? "" }
-    var email: String { self.user.email ?? "" }
-    var phone: String { self.user.phone ?? "" }
+    var email: String { self.user.email?.lowercased() ?? "" }
+    var emailURL: URL? { URL(string: "mailto:\(self.email)") }
+    private var phone: String { self.user.phone ?? "" }
+    var phonePlain: String {
+        let elements = self.phone.split(separator: " ")
+        guard let onlyPhone = elements.first?.description else { return "" }
+        var phonePlain = ""
+        
+        for char in onlyPhone {
+            if let number = Int(char.description) {
+                phonePlain.append(number.description)
+            }
+        }
+        
+        if phonePlain.count > 10 {
+            while phonePlain.count > 10 {
+                phonePlain.removeFirst()
+            }
+        }
+        
+        return phonePlain
+    }
+    var phoneWithFormat: String {
+        let string: NSMutableString = NSMutableString(string: self.phonePlain)
+        string.insert("-", at: 6)
+        string.insert("-", at: 3)
+        string.insert(")", at: 3)
+        string.insert("(", at: 0)
+        return string.description
+    }
+    var phoneURL: URL? { URL(string: "tel://\(self.phonePlain)") }
     var website: String { self.user.website ?? "" }
+    var websiteURL: URL? { URL(string: "https://www.\(self.website)") }
     
     let address: AddressViewModel!
     let company: CompanyViewModel!
@@ -26,6 +67,13 @@ struct UserViewModel {
         self.address = AddressViewModel(address: self.user.address ?? AddressModel())
         self.company = CompanyViewModel(company: self.user.company ?? CompanyModel())
     }
+    
+    /* This function only enters a great effect on physical device */
+    public func canSendEmail() -> Bool { self.emailURL != nil }
+    
+    public func canCall() -> Bool { self.emailURL != nil }
+    
+    public func canAccessBrowser() -> Bool { self.websiteURL != nil }
 }
 
 // MARK: - User List
@@ -35,7 +83,7 @@ struct UserListViewModel {
     var count: Int { self.users.count }
     
     init(users: [UserModel]) {
-        self.users = users.sorted(by: { UserViewModel(user: $0).name < UserViewModel(user: $1).name })
+        self.users = users.sorted(by: { UserViewModel(user: $0).id < UserViewModel(user: $1).id })
     }
     
     public func userForIndex(_ index: Int) -> UserViewModel { UserViewModel(user: self.users[index]) }

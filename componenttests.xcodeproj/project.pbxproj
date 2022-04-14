@@ -13,6 +13,11 @@
 		1D17FE7E280767B800A473EC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE7D280767B800A473EC /* UserModel.swift */; };
 		1D17FE80280768D500A473EC /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE7F280768D500A473EC /* UserViewModel.swift */; };
 		1D17FE8328076E3E00A473EC /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE8228076E3E00A473EC /* UserServices.swift */; };
+		1D17FE85280776DB00A473EC /* UserDetailsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE84280776DB00A473EC /* UserDetailsTableView.swift */; };
+		1D17FE892807792D00A473EC /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE872807792D00A473EC /* UserDetailsViewController.swift */; };
+		1D17FE8A2807792D00A473EC /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D17FE882807792D00A473EC /* UserDetailsViewController.xib */; };
+		1D17FE8E28079A2400A473EC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE8C28079A2400A473EC /* MapViewController.swift */; };
+		1D17FE8F28079A2400A473EC /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D17FE8D28079A2400A473EC /* MapViewController.xib */; };
 		1D2C5E0C2806AA4E00EDD254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C5E0B2806AA4E00EDD254 /* AppDelegate.swift */; };
 		1D2C5E152806AA4F00EDD254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C5E142806AA4F00EDD254 /* Assets.xcassets */; };
 		1D2C5E182806AA4F00EDD254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C5E162806AA4F00EDD254 /* LaunchScreen.storyboard */; };
@@ -28,6 +33,11 @@
 		1D17FE7D280767B800A473EC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1D17FE7F280768D500A473EC /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		1D17FE8228076E3E00A473EC /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
+		1D17FE84280776DB00A473EC /* UserDetailsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableView.swift; sourceTree = "<group>"; };
+		1D17FE872807792D00A473EC /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		1D17FE882807792D00A473EC /* UserDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
+		1D17FE8C28079A2400A473EC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1D17FE8D28079A2400A473EC /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		1D2C5E082806AA4E00EDD254 /* componenttests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = componenttests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2C5E0B2806AA4E00EDD254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D2C5E142806AA4F00EDD254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +62,7 @@
 		1D17FE722807629500A473EC /* CustomTableViews */ = {
 			isa = PBXGroup;
 			children = (
+				1D17FE84280776DB00A473EC /* UserDetailsTableView.swift */,
 				1D17FE73280762C200A473EC /* UsersTableView.swift */,
 			);
 			path = CustomTableViews;
@@ -99,6 +110,24 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		1D17FE862807790900A473EC /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1D17FE872807792D00A473EC /* UserDetailsViewController.swift */,
+				1D17FE882807792D00A473EC /* UserDetailsViewController.xib */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		1D17FE8B280799FE00A473EC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1D17FE8C28079A2400A473EC /* MapViewController.swift */,
+				1D17FE8D28079A2400A473EC /* MapViewController.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		1D2C5DFF2806AA4E00EDD254 = {
 			isa = PBXGroup;
 			children = (
@@ -133,8 +162,10 @@
 		1D2C5E1F2806AB3D00EDD254 /* View+Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D17FE8B280799FE00A473EC /* Map */,
 				1D2C5E202806AB9300EDD254 /* MenuTabBarController.swift */,
 				1D17FE722807629500A473EC /* CustomTableViews */,
+				1D17FE862807790900A473EC /* UserDetails */,
 				1D2C5E222806ACF000EDD254 /* Users */,
 			);
 			path = "View+Controllers";
@@ -209,6 +240,8 @@
 			files = (
 				1D2C5E182806AA4F00EDD254 /* LaunchScreen.storyboard in Resources */,
 				1D2C5E262806AD0800EDD254 /* UsersViewController.xib in Resources */,
+				1D17FE8A2807792D00A473EC /* UserDetailsViewController.xib in Resources */,
+				1D17FE8F28079A2400A473EC /* MapViewController.xib in Resources */,
 				1D2C5E152806AA4F00EDD254 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,10 +256,13 @@
 				1D17FE7A2807669400A473EC /* UserRouter.swift in Sources */,
 				1D17FE80280768D500A473EC /* UserViewModel.swift in Sources */,
 				1D17FE8328076E3E00A473EC /* UserServices.swift in Sources */,
+				1D17FE85280776DB00A473EC /* UserDetailsTableView.swift in Sources */,
 				1D17FE7E280767B800A473EC /* UserModel.swift in Sources */,
 				1D17FE74280762C200A473EC /* UsersTableView.swift in Sources */,
 				1D2C5E212806AB9300EDD254 /* MenuTabBarController.swift in Sources */,
+				1D17FE8E28079A2400A473EC /* MapViewController.swift in Sources */,
 				1D17FE772807645F00A473EC /* APIManager.swift in Sources */,
+				1D17FE892807792D00A473EC /* UserDetailsViewController.swift in Sources */,
 				1D2C5E252806AD0800EDD254 /* UsersViewController.swift in Sources */,
 				1D2C5E0C2806AA4E00EDD254 /* AppDelegate.swift in Sources */,
 			);

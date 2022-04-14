@@ -27,7 +27,7 @@ extension UsersTableView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "UserCell")
         let user = self.collection.userForIndex(indexPath.row)
         cell.textLabel?.text = user.name
         cell.accessoryType = .disclosureIndicator
