@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="componenttests" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="componenttests" customModuleProvider="target">
             <connections>
-                <outlet property="mapView" destination="TYj-Mg-YdV" id="MpJ-Op-X2H"/>
+                <outlet property="menuTableView" destination="ctz-St-qCV" id="63T-mv-GCt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,19 +19,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TYj-Mg-YdV">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ctz-St-qCV">
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                </mapView>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="TYj-Mg-YdV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5hm-pK-YVp"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TYj-Mg-YdV" secondAttribute="trailing" id="A1K-Oz-co5"/>
-                <constraint firstAttribute="bottom" secondItem="TYj-Mg-YdV" secondAttribute="bottom" id="Cy9-Gv-6QC"/>
-                <constraint firstItem="TYj-Mg-YdV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yna-7v-2ym"/>
+                <constraint firstItem="ctz-St-qCV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8XO-Vl-jjF"/>
+                <constraint firstItem="ctz-St-qCV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LnT-WT-Sby"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ctz-St-qCV" secondAttribute="trailing" id="fks-By-pmw"/>
+                <constraint firstAttribute="bottom" secondItem="ctz-St-qCV" secondAttribute="bottom" id="uiY-BC-LW4"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="103"/>
+            <point key="canvasLocation" x="139" y="128"/>
         </view>
     </objects>
     <resources>

@@ -7,45 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D17FE74280762C200A473EC /* UsersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE73280762C200A473EC /* UsersTableView.swift */; };
 		1D17FE772807645F00A473EC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE762807645F00A473EC /* APIManager.swift */; };
-		1D17FE7A2807669400A473EC /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE792807669400A473EC /* UserRouter.swift */; };
-		1D17FE7E280767B800A473EC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE7D280767B800A473EC /* UserModel.swift */; };
-		1D17FE80280768D500A473EC /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE7F280768D500A473EC /* UserViewModel.swift */; };
-		1D17FE8328076E3E00A473EC /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE8228076E3E00A473EC /* UserServices.swift */; };
-		1D17FE85280776DB00A473EC /* UserDetailsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE84280776DB00A473EC /* UserDetailsTableView.swift */; };
-		1D17FE892807792D00A473EC /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE872807792D00A473EC /* UserDetailsViewController.swift */; };
-		1D17FE8A2807792D00A473EC /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D17FE882807792D00A473EC /* UserDetailsViewController.xib */; };
-		1D17FE8E28079A2400A473EC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D17FE8C28079A2400A473EC /* MapViewController.swift */; };
-		1D17FE8F28079A2400A473EC /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D17FE8D28079A2400A473EC /* MapViewController.xib */; };
 		1D2C5E0C2806AA4E00EDD254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C5E0B2806AA4E00EDD254 /* AppDelegate.swift */; };
 		1D2C5E152806AA4F00EDD254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C5E142806AA4F00EDD254 /* Assets.xcassets */; };
 		1D2C5E182806AA4F00EDD254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C5E162806AA4F00EDD254 /* LaunchScreen.storyboard */; };
-		1D2C5E212806AB9300EDD254 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C5E202806AB9300EDD254 /* MenuTabBarController.swift */; };
-		1D2C5E252806AD0800EDD254 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C5E232806AD0800EDD254 /* UsersViewController.swift */; };
-		1D2C5E262806AD0800EDD254 /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C5E242806AD0800EDD254 /* UsersViewController.xib */; };
+		1DADC1D32813CBDD004461BA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADC1D12813CBDD004461BA /* MenuViewController.swift */; };
+		1DADC1D42813CBDD004461BA /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DADC1D22813CBDD004461BA /* MenuViewController.xib */; };
+		1DB2E4C32813CFB50056116C /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2E4C12813CFB50056116C /* GalleryViewController.swift */; };
+		1DB2E4C42813CFB50056116C /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB2E4C22813CFB50056116C /* GalleryViewController.xib */; };
+		1DB2E4C72813D0060056116C /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2E4C62813D0060056116C /* GalleryCollectionView.swift */; };
+		1DB2E4CB2813D0B00056116C /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2E4C92813D0B00056116C /* GalleryCell.swift */; };
+		1DB2E4CC2813D0B00056116C /* GalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB2E4CA2813D0B00056116C /* GalleryCell.xib */; };
+		1DB2E4CF2813D9000056116C /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2E4CE2813D9000056116C /* GalleryViewModel.swift */; };
+		1DB2E4D3281482270056116C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2E4D1281482270056116C /* ImageViewController.swift */; };
+		1DB2E4D4281482270056116C /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DB2E4D2281482270056116C /* ImageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D17FE73280762C200A473EC /* UsersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableView.swift; sourceTree = "<group>"; };
 		1D17FE762807645F00A473EC /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		1D17FE792807669400A473EC /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
-		1D17FE7D280767B800A473EC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		1D17FE7F280768D500A473EC /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		1D17FE8228076E3E00A473EC /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
-		1D17FE84280776DB00A473EC /* UserDetailsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableView.swift; sourceTree = "<group>"; };
-		1D17FE872807792D00A473EC /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
-		1D17FE882807792D00A473EC /* UserDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
-		1D17FE8C28079A2400A473EC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		1D17FE8D28079A2400A473EC /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		1D2C5E082806AA4E00EDD254 /* componenttests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = componenttests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2C5E0B2806AA4E00EDD254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D2C5E142806AA4F00EDD254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D2C5E172806AA4F00EDD254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D2C5E192806AA4F00EDD254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D2C5E202806AB9300EDD254 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
-		1D2C5E232806AD0800EDD254 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
-		1D2C5E242806AD0800EDD254 /* UsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersViewController.xib; sourceTree = "<group>"; };
+		1DADC1D12813CBDD004461BA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1DADC1D22813CBDD004461BA /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		1DB2E4C12813CFB50056116C /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		1DB2E4C22813CFB50056116C /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
+		1DB2E4C62813D0060056116C /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
+		1DB2E4C92813D0B00056116C /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		1DB2E4CA2813D0B00056116C /* GalleryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCell.xib; sourceTree = "<group>"; };
+		1DB2E4CE2813D9000056116C /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		1DB2E4D1281482270056116C /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		1DB2E4D2281482270056116C /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,73 +53,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D17FE722807629500A473EC /* CustomTableViews */ = {
-			isa = PBXGroup;
-			children = (
-				1D17FE84280776DB00A473EC /* UserDetailsTableView.swift */,
-				1D17FE73280762C200A473EC /* UsersTableView.swift */,
-			);
-			path = CustomTableViews;
-			sourceTree = "<group>";
-		};
 		1D17FE752807644C00A473EC /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				1D17FE762807645F00A473EC /* APIManager.swift */,
-				1D17FE782807667D00A473EC /* Routers */,
-				1D17FE8128076E3100A473EC /* Services */,
 			);
 			path = Domain;
-			sourceTree = "<group>";
-		};
-		1D17FE782807667D00A473EC /* Routers */ = {
-			isa = PBXGroup;
-			children = (
-				1D17FE792807669400A473EC /* UserRouter.swift */,
-			);
-			path = Routers;
 			sourceTree = "<group>";
 		};
 		1D17FE7B280767A000A473EC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1D17FE7D280767B800A473EC /* UserModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		1D17FE7C280767A900A473EC /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				1D17FE7F280768D500A473EC /* UserViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		1D17FE8128076E3100A473EC /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				1D17FE8228076E3E00A473EC /* UserServices.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		1D17FE862807790900A473EC /* UserDetails */ = {
-			isa = PBXGroup;
-			children = (
-				1D17FE872807792D00A473EC /* UserDetailsViewController.swift */,
-				1D17FE882807792D00A473EC /* UserDetailsViewController.xib */,
-			);
-			path = UserDetails;
-			sourceTree = "<group>";
-		};
-		1D17FE8B280799FE00A473EC /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				1D17FE8C28079A2400A473EC /* MapViewController.swift */,
-				1D17FE8D28079A2400A473EC /* MapViewController.xib */,
-			);
-			path = Map;
 			sourceTree = "<group>";
 		};
 		1D2C5DFF2806AA4E00EDD254 = {
@@ -147,6 +87,7 @@
 		1D2C5E0A2806AA4E00EDD254 /* componenttests */ = {
 			isa = PBXGroup;
 			children = (
+				1DB2E4CD2813D8EC0056116C /* ViewModels */,
 				1D2C5E192806AA4F00EDD254 /* Info.plist */,
 				1D2C5E0B2806AA4E00EDD254 /* AppDelegate.swift */,
 				1D2C5E142806AA4F00EDD254 /* Assets.xcassets */,
@@ -154,7 +95,6 @@
 				1D2C5E162806AA4F00EDD254 /* LaunchScreen.storyboard */,
 				1D17FE7B280767A000A473EC /* Models */,
 				1D2C5E1F2806AB3D00EDD254 /* View+Controllers */,
-				1D17FE7C280767A900A473EC /* ViewModels */,
 			);
 			path = componenttests;
 			sourceTree = "<group>";
@@ -162,22 +102,65 @@
 		1D2C5E1F2806AB3D00EDD254 /* View+Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1D17FE8B280799FE00A473EC /* Map */,
-				1D2C5E202806AB9300EDD254 /* MenuTabBarController.swift */,
-				1D17FE722807629500A473EC /* CustomTableViews */,
-				1D17FE862807790900A473EC /* UserDetails */,
-				1D2C5E222806ACF000EDD254 /* Users */,
+				1DB2E4C52813CFD70056116C /* CustomComponents */,
+				1DB2E4D0281481A20056116C /* Image */,
+				1DADC1D02813CBBE004461BA /* Menu */,
+				1DB2E4C02813CFAA0056116C /* MultimediaGallery */,
 			);
 			path = "View+Controllers";
 			sourceTree = "<group>";
 		};
-		1D2C5E222806ACF000EDD254 /* Users */ = {
+		1DADC1D02813CBBE004461BA /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				1D2C5E232806AD0800EDD254 /* UsersViewController.swift */,
-				1D2C5E242806AD0800EDD254 /* UsersViewController.xib */,
+				1DADC1D12813CBDD004461BA /* MenuViewController.swift */,
+				1DADC1D22813CBDD004461BA /* MenuViewController.xib */,
 			);
-			path = Users;
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		1DB2E4C02813CFAA0056116C /* MultimediaGallery */ = {
+			isa = PBXGroup;
+			children = (
+				1DB2E4C12813CFB50056116C /* GalleryViewController.swift */,
+				1DB2E4C22813CFB50056116C /* GalleryViewController.xib */,
+				1DB2E4C82813D0940056116C /* Cells */,
+			);
+			path = MultimediaGallery;
+			sourceTree = "<group>";
+		};
+		1DB2E4C52813CFD70056116C /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				1DB2E4C62813D0060056116C /* GalleryCollectionView.swift */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		1DB2E4C82813D0940056116C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1DB2E4C92813D0B00056116C /* GalleryCell.swift */,
+				1DB2E4CA2813D0B00056116C /* GalleryCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1DB2E4CD2813D8EC0056116C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1DB2E4CE2813D9000056116C /* GalleryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1DB2E4D0281481A20056116C /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				1DB2E4D1281482270056116C /* ImageViewController.swift */,
+				1DB2E4D2281482270056116C /* ImageViewController.xib */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,10 +221,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB2E4CC2813D0B00056116C /* GalleryCell.xib in Resources */,
 				1D2C5E182806AA4F00EDD254 /* LaunchScreen.storyboard in Resources */,
-				1D2C5E262806AD0800EDD254 /* UsersViewController.xib in Resources */,
-				1D17FE8A2807792D00A473EC /* UserDetailsViewController.xib in Resources */,
-				1D17FE8F28079A2400A473EC /* MapViewController.xib in Resources */,
+				1DADC1D42813CBDD004461BA /* MenuViewController.xib in Resources */,
+				1DB2E4C42813CFB50056116C /* GalleryViewController.xib in Resources */,
+				1DB2E4D4281482270056116C /* ImageViewController.xib in Resources */,
 				1D2C5E152806AA4F00EDD254 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,18 +237,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D17FE7A2807669400A473EC /* UserRouter.swift in Sources */,
-				1D17FE80280768D500A473EC /* UserViewModel.swift in Sources */,
-				1D17FE8328076E3E00A473EC /* UserServices.swift in Sources */,
-				1D17FE85280776DB00A473EC /* UserDetailsTableView.swift in Sources */,
-				1D17FE7E280767B800A473EC /* UserModel.swift in Sources */,
-				1D17FE74280762C200A473EC /* UsersTableView.swift in Sources */,
-				1D2C5E212806AB9300EDD254 /* MenuTabBarController.swift in Sources */,
-				1D17FE8E28079A2400A473EC /* MapViewController.swift in Sources */,
 				1D17FE772807645F00A473EC /* APIManager.swift in Sources */,
-				1D17FE892807792D00A473EC /* UserDetailsViewController.swift in Sources */,
-				1D2C5E252806AD0800EDD254 /* UsersViewController.swift in Sources */,
+				1DB2E4CF2813D9000056116C /* GalleryViewModel.swift in Sources */,
+				1DB2E4CB2813D0B00056116C /* GalleryCell.swift in Sources */,
 				1D2C5E0C2806AA4E00EDD254 /* AppDelegate.swift in Sources */,
+				1DB2E4C32813CFB50056116C /* GalleryViewController.swift in Sources */,
+				1DB2E4C72813D0060056116C /* GalleryCollectionView.swift in Sources */,
+				1DB2E4D3281482270056116C /* ImageViewController.swift in Sources */,
+				1DADC1D32813CBDD004461BA /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

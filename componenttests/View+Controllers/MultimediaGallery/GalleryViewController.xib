@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailsViewController" customModule="componenttests" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GalleryViewController" customModule="componenttests" customModuleProvider="target">
             <connections>
-                <outlet property="userDetailsTableView" destination="ry4-zH-d5Q" id="rI2-0N-mNZ"/>
+                <outlet property="galleryCollectionView" destination="QkW-Fs-a3W" id="IUG-Rg-0SQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,20 +19,26 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ry4-zH-d5Q" customClass="UserDetailsTableView" customModule="componenttests" customModuleProvider="target">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QkW-Fs-a3W" customClass="GalleryCollectionView" customModule="componenttests" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ngx-r3-qmU">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="ry4-zH-d5Q" secondAttribute="bottom" id="62U-R0-KYe"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ry4-zH-d5Q" secondAttribute="trailing" id="Fk4-i7-B22"/>
-                <constraint firstItem="ry4-zH-d5Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VDr-Xd-Zbg"/>
-                <constraint firstItem="ry4-zH-d5Q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="tcR-kJ-lBS"/>
+                <constraint firstItem="QkW-Fs-a3W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="14C-9O-vsC"/>
+                <constraint firstAttribute="trailing" secondItem="QkW-Fs-a3W" secondAttribute="trailing" id="33G-PD-iUb"/>
+                <constraint firstItem="QkW-Fs-a3W" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="EbZ-DE-LzO"/>
+                <constraint firstAttribute="bottom" secondItem="QkW-Fs-a3W" secondAttribute="bottom" id="as5-jy-f7P"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="126"/>
+            <point key="canvasLocation" x="131.8840579710145" y="146.65178571428569"/>
         </view>
     </objects>
     <resources>
